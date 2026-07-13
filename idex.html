@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edil | Профиль</title>
+    <style>
+        /* Общие настройки */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Карточка по центру */
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+        }
+
+        h1 { color: #333; margin-bottom: 10px; }
+        p { color: #666; margin-bottom: 25px; line-height: 1.6; }
+
+        /* Блок навыков */
+        .skills { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
+        .skill-item { 
+            background: #f0f4ff; 
+            color: #5a67d8; 
+            padding: 8px 16px; 
+            border-radius: 50px; 
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        /* Красивая кнопка */
+        .btn {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.3s;
+        }
+        .btn:hover {
+            background: #5a67d8;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Edil</h1>
+        <p>Мне 12 лет, я перехожу в 7 класс. Увлекаюсь программированием и профессионально занимаюсь футболом в клубе «Затоболец».</p>
+
+        <div class="skills">
+            <span class="skill-item">Программирование</span>
+            <span class="skill-item">Футбол</span>
+            <span class="skill-item">Учеба</span>
+        </div>
+
+        <div style="text-align: left; margin-bottom: 30px;">
+            <h3 style="margin-bottom: 10px;">Проект</h3>
+            <p style="margin: 0; font-size: 0.95rem;"><strong>Моя визитка</strong> — мой первый сайт, созданный, чтобы рассказать о себе, моих увлечениях и целях.</p>
+        </div>
+
+        <a href="mailto:your@email.com" class="btn">Связаться со мной</a>
+    </div>
+
+</body>
+</html>
